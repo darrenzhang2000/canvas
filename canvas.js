@@ -16,6 +16,7 @@ window.addEventListener("load", () => {
 
     let startPosition = e => {
         //resets path so new drawing begins where you mousedown
+        ctx.beginPath()
         ctx.moveTo(e.clientX, e.clientY)
 
         drawing = true
@@ -23,7 +24,6 @@ window.addEventListener("load", () => {
 
     let finishedPosition = () => {
         drawing = false
-        ctx.beginPath()
     }
 
     let draw = e => {
