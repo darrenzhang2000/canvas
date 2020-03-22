@@ -20,6 +20,9 @@ window.addEventListener("load", () => {
         ctx.moveTo(e.clientX, e.clientY)
 
         drawing = true
+
+        //so that single points are drawn
+        draw(e)
     }
 
     let finishedPosition = () => {
